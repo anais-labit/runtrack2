@@ -1,19 +1,8 @@
 <?php
 
-function bonjour($jour)
-
-{ switch ($jour) {
-    case true:
-        echo "Bonjour<br>";
-        break;
-    case false:
-        echo "Bonsoir<br>";
-        break;
-}
+function getHello()
+{
+    return "Hello LaPlateforme!";
 }
 
-bonjour(false);
-bonjour(true);
-
-?>
-
+echo getHello();
