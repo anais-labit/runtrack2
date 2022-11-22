@@ -1,5 +1,5 @@
 * {
-  font-family: "Raleway", sans-serif;
+  font-family: "Bebas Neue", cursive;
   font-weight: 600;
 }
 
@@ -12,17 +12,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
 }
 
 form {
-  border-radius: 10px;
   max-width: 60%;
-  padding: 20px;
+  padding: 40px;
   display: flex;
   align-items: flex-end;
   flex-direction: column;
-  width: 45em;
+  width: 40em;
 }
 
 input[type="text"],
@@ -31,16 +29,18 @@ textarea {
   background-color: white;
   font-size: 15px;
   width: 100%;
-  padding: 12px;
-  outline: none;
-  border-radius: 5px;
+  padding: 15px;
   border: none;
   box-sizing: border-box;
   margin-top: 5px;
   margin-bottom: 15px;
   resize: none;
-    color: black;
+  color: black;
+}
 
+input[type="text"],
+textarea {
+  padding-left: 20px;
 }
 
 input[type="submit"] {
@@ -55,5 +55,5 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #cde6f5;
+  background-color: #dcdce2;
 }
