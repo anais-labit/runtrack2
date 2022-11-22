@@ -6,7 +6,7 @@
   </head>
   <body>
 
-    <form action="index.php" method="get">
+    <form action="index.php" >
         <input type="text" placeholder="Prénom" name="prenom" />
         <input type="text" placeholder="Nom" name="nom" />
         <input type="submit" value="Envoyer" />

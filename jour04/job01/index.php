@@ -22,7 +22,7 @@ foreach ($_GET as $key => $value) {
           <input type="text" placeholder="Mail" name="mail" />
           <input type="submit" value="Envoyer" />
       </div>
-      <p>Le nombre d’arguments GET envoyé est : <?php echo $counter ?> </p>
+      <p>Le nombre d’argument GET envoyé est : <?php echo $counter ?> </p>
 
   </body>
 </html>

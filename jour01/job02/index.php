@@ -7,3 +7,5 @@
 /* $str="La Plateforme";
 echo "$str";
 ?>
+
+
