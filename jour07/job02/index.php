@@ -14,6 +14,3 @@ function bonjour($jour)
 
 bonjour(false);
 bonjour(true);
-
-?>
-
