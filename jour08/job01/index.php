@@ -1,6 +1,6 @@
 <?php
 session_start();
-var_dump($_SESSION['nbvisites']);
+// var_dump($_SESSION['nbvisites']);
 
 if (isset($_POST['reset'])) {
     $_SESSION['nbvisites'] = 0;
@@ -8,6 +8,8 @@ if (isset($_POST['reset'])) {
 
 if (isset($_SESSION['nbvisites'])) {
     ($_SESSION['nbvisites']++);
+} else {
+    $_SESSION['nbvisites'] = 1;
 }
 
 echo 'Vous avez consulté ' . $_SESSION['nbvisites'] . ' fois cette page';
