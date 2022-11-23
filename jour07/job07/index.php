@@ -1,7 +1,12 @@
 <?php
 
+if (!isset($_GET["str"])) {
+    $_GET["str"] = " ";
+};
+
+
 function gras($str)
-{   
+{
     $str = $_GET["str"];
     // fonction system pour convertir une string en array - à retravailler sorry !
     $arr = str_split($str);
@@ -9,13 +14,13 @@ function gras($str)
     $cap = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
     $new_str = " ";
 
-    for ($i = 0 ; isset($arr[$i]) ; $i++) {
-        for ($j = 0 ; isset($cap[$j]) ; $j++) {
+    for ($i = 0; isset($arr[$i]); $i++) {
+        for ($j = 0; isset($cap[$j]); $j++) {
             if (($arr[$i][0]) == $cap[$j]) {
                 $arr[$i] = "<b>" . $arr[$i] . "</b>";
             }
         }
-        $new_str .= $arr[$i];
+        $new_str = $new_str . $arr[$i];
     }
     return $new_str;
 }
