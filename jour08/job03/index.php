@@ -8,24 +8,10 @@ if (isset($_POST['reset'])) {
 
 if (isset($_POST['send'])) {
     $_SESSION['prenom'][] =  $_POST['prenom'];
-     foreach($_SESSION['prenom'] as $key => $value){
+    foreach ($_SESSION['prenom'] as $key => $value) {
         echo "<br>  $value <br>";
-     }
+    }
 }
-
-
-
-// si le tableau existe, ajouter le prenom dans le tableau 
-
-
-// if ($_SESSION['prenom']) == ($_POST['prenom']) {
-//     $list []=$_POST['prenom'];
-//     echo $list[0];
-// }
-
-// // s'il n'existe pas, créer le tableau 
-
-
 
 ?>
 
