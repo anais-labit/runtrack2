@@ -5,7 +5,7 @@ $conn = new mysqli('localhost', 'root', '', 'jour09');
 // var_dump($conn);
 
 // On créé et envoie la requête 
-$request = $conn->query("SELECT * FROM etudiants");
+$request = $conn->query("SELECT prenom, nom, naissance, sexe, email FROM etudiants");
 
 // on récupère le resultat
 $result = $request->fetch_all();
@@ -40,7 +40,7 @@ $result = $request->fetch_all();
                 foreach ($ligne as $value) {
                     echo "<td>" . $value . "</td>";
                 }
-                echo "</tr>";
+                // echo "</tr>";
             }
             ?>
         </tbody>
