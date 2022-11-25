@@ -32,15 +32,8 @@ $result = $request->fetch_all();
                     echo "<td>" . $value . "</td>";
                 }
             }
-
             ?>
-
-
-
         </tbody>
-
     </table>
-
 </body>
-
 </html>

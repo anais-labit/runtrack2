@@ -14,11 +14,11 @@ $result = $request->fetch_all();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job 2 jour 8</title>
+    <title>Job 2 jour 10</title>
 </head>
 
 <body>
-    <table>
+    <table border="1px">
         <thead>
             <th>Nom</th>
             <th>Capacité</th>
@@ -29,9 +29,9 @@ $result = $request->fetch_all();
                 foreach ($result as $ligne) {
                     echo "<tr>";
                     foreach ($ligne as $value) {
-                        echo "<td>" . $value . "<td>";
+                        echo "<td>" . $value . "</td>";
                     }
-                    echo "<tr>";
+                    echo "</tr>";
                 }
                 ?>
 

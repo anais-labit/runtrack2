@@ -27,6 +27,7 @@ $result = $request->fetch_all();
         </thead>
         <tbody>
             <?php foreach ($result as $ligne) {
+                echo "<tr>";
                 foreach ($ligne as $value) {
                     echo "<td>" . $value . "</td>";
                 }

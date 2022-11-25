@@ -2,8 +2,6 @@
 $conn = new mysqli('localhost', 'root', '', 'jour09');
 $request = $conn->query("SELECT nom, capacite FROM salles ORDER BY capacite DESC");
 $result = $request->fetch_all();
-
-
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +18,7 @@ $result = $request->fetch_all();
     <table border="1px" width="50%">
         <tr">
             <th width="100%">Capacité des salles par ordre décroissant</th>
-                </tr>
+            </tr>
     </table>
 
     <table border="1px" width="50%">
@@ -29,18 +27,16 @@ $result = $request->fetch_all();
             <th>Capacité</th>
         </thead>
         <tbody>
-            <td>
-                <?php
-                foreach ($result as $ligne) {
-                    echo "<tr>";
-                    foreach ($ligne as $value) {
-                        echo "<td>" . $value . "</td>";
-                    }
-                    echo "</tr>";
+            <?php
+            foreach ($result as $ligne) {
+                echo "<tr>";
+                foreach ($ligne as $value) {
+                    echo "<td>" . $value . "</td>";
                 }
+                echo "</tr>";
+            }
 
-                ?>
-            </td>
+            ?>
         </tbody>
     </table>
 

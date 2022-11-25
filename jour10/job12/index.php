@@ -33,16 +33,9 @@ $result = $request->fetch_all();
                 }
                 echo "</tr>";
             }
-
             ?>
-
-
-
         </tbody>
-
     </table>
-
-
 </body>
 
 </html>

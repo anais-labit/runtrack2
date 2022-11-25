@@ -23,18 +23,16 @@ $result = $request->fetch_all();
             <th>Capacité moyenne des salles</th>
         </thead>
         <tbody>
-            <td>
-                <?php
-                foreach ($result as $ligne) {
-                    echo "<tr>";
-                    foreach ($ligne as $value) {
-                        echo "<td>" . $value . "</td>";
-                    }
-                    echo "</tr>";
+            <?php
+            foreach ($result as $ligne) {
+                echo "<tr>";
+                foreach ($ligne as $value) {
+                    echo "<td>" . $value . "</td>";
                 }
+                echo "</tr>";
+            }
 
-                ?>
-            </td>
+            ?>
         </tbody>
     </table>
 

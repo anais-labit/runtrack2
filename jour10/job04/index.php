@@ -1,7 +1,7 @@
 <?php
 
 $conn = new mysqli('localhost', 'root', '', 'jour09');
-$request = $conn->query("SELECT prenom, nom, naissance, sexe, email FROM etudiants WHERE prenom LIKE 'T%'");
+$request = $conn->query("SELECT * FROM etudiants WHERE prenom LIKE 'T%'");
 $result = $request->fetch_all();
 
 ?>
